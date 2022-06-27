@@ -3,10 +3,10 @@ import { useGlobalContext } from "../context";
 import { Link } from "react-router-dom";
 const Coins = () => {
   const {coins} =useGlobalContext()
-  
+
   return (
     <div className="flex flex-col justify-center">
-      {coins.map((item, index) => {
+      {coins?.map((item, index) => {
         const {
           id,
           current_price,

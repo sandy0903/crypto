@@ -28,7 +28,7 @@ const AppProvider = ({ children }) => {
 
 // }
   return (
-    <AppContext.Provider value={{ coins, fetchData }}>
+    <AppContext.Provider value={{ coins }}>
       {children}
     </AppContext.Provider>
   );
