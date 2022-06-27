@@ -15,7 +15,7 @@ const AppProvider = ({ children }) => {
     };
     fetchData();
   }, []);
-  
+
 // const changeCoinId= async (newCoin)=>{
 //     try {
 //         const res= await fetchCoin(newCoin)
@@ -28,7 +28,7 @@ const AppProvider = ({ children }) => {
 
 // }
   return (
-    <AppContext.Provider value={{ coins, fetchCoin }}>
+    <AppContext.Provider value={{ coins, fetchData }}>
       {children}
     </AppContext.Provider>
   );
