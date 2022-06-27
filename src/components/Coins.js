@@ -23,8 +23,8 @@ const Coins = () => {
                 <img src={image} className="w-10" />
               </li>
               <li>${current_price}</li>
-              <li>{price_change_percentage_24h}%</li>
-              <li>${total_volume}</li>
+              <li className="hidden sm:block">{price_change_percentage_24h}%</li>
+              <li className="hidden sm:block">${total_volume}</li>
               <li className="hidden sm:block">${market_cap}</li>
             </ul>
           </Link>
